@@ -18,7 +18,7 @@
 <body>
   <p><a href="index.html">← Dashboard Home</a></p>
   <h1>00174 — Final Script Awaiting David Judgment: The Feed Our Future Improper Payments Story</h1>
-  <div class="meta">Source file: 00174_final_script_v1.txt · Published 2026-06-16T16:31:01</div>
+  <div class="meta">Source file: 00174_final_script_v1.txt · Published 2026-06-17T12:28:16</div>
   <div class="copy-bar">
     <button class="copy-button" type="button" onclick="copyScriptOnly()">Copy Script</button>
     <button class="copy-button" type="button" onclick="copyDavidPrompt()">Copy Script + David Edit Prompt</button>
@@ -205,5 +205,13 @@ And now—you know what REALLY happened.
       copyTextToClipboard(DAVID_EDIT_PROMPT, 'Script + David Edit prompt copied to clipboard.');
     }
   </script>
+<!-- JARVIS_V1136_COPY_IMPORT_FILENAME_START -->
+<section id="jarvis-copy-import-filename" style="margin:24px 0;padding:16px;border:1px solid #ddd;border-radius:10px;background:#fafafa">
+  <h2 style="margin-top:0">David Judgment Import Filename</h2>
+  <p>Use this exact filename when creating the locked script file in GitHub. The <code>.txt</code> extension is required.</p>
+  <p><code id="jarvis-import-filename">00174_final_script_locked_v2.txt</code></p>
+  <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('jarvis-import-filename').textContent).then(() => { this.textContent='Copied Import Filename'; }).catch(() => { this.textContent='Copy failed'; });">Copy Import Filename</button>
+</section>
+<!-- JARVIS_V1136_COPY_IMPORT_FILENAME_END -->
 </body>
 </html>
