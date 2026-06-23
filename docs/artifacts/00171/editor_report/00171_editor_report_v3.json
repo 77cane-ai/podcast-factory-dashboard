@@ -1,0 +1,179 @@
+{
+  "editor_version": "0.6.2",
+  "program_name": "Podcast Factory Script Editor Agent",
+  "model": "gpt-5.5",
+  "canonical_story_id": "00171",
+  "story_title": "The Botched 2024 Afghanistan Withdrawal",
+  "story_status": "in_production",
+  "is_update_story": false,
+  "base_story_title": "House Foreign Affairs Committee’s dueling September 2024 Afghanistan withdrawal reports create a formal contradiction record",
+  "generated_at": "2026-06-23T14:55:54",
+  "source_script_path": "C:\\Users\\77can\\OneDrive\\Desktop\\scripts\\00171_script_v2.txt",
+  "edited_script_path": "C:\\Users\\77can\\OneDrive\\Desktop\\scripts\\00171_script_v3.txt",
+  "input_script_version": 2,
+  "output_script_version": 3,
+  "script_source": "explicit_input_version",
+  "output_version_source": "next_available_script_version",
+  "factory_base_dir": "C:\\Users\\77can\\OneDrive\\Desktop",
+  "factory_base_source": "factory_paths.json",
+  "words_before": 2081,
+  "words_after": 1914,
+  "word_delta": -167,
+  "percent_reduction": 8.0,
+  "editor_mode": "narrative_impact_editor_with_hard_editorial_rules",
+  "locked_format_preservation": {
+    "standard_opening_input": "Have you ever noticed how the biggest breaking news stories often begin with more questions than answers?",
+    "signature_closing_input": "And now—you know what REALLY happened.",
+    "locked_line_changes": [],
+    "locked_lines_preserved": true,
+    "post_cleanup_locked_line_changes": []
+  },
+  "public_title_integrity": {
+    "public_title_integrity_version": "V0.6.2",
+    "expected_public_title": "The Botched 2024 Afghanistan Withdrawal",
+    "base_story_title": "House Foreign Affairs Committee’s dueling September 2024 Afghanistan withdrawal reports create a formal contradiction record",
+    "opening_title_detected": "The Botched 2024 Afghanistan Withdrawal",
+    "title_line_found": true,
+    "repair_applied": false,
+    "repair_reason": "opening_title_already_matches_public_title",
+    "original_title_line": "What Ever Happened WITH... The Botched 2024 Afghanistan Withdrawal?",
+    "repaired_title_line": ""
+  },
+  "hard_rule_enforcement": {
+    "hard_rule_version": "V0.5.1",
+    "caveat_definition": "A caveat is any sentence, clause, or phrase that limits the force of a finding, assessment, allegation, implication, or accountability question.",
+    "caveat_policy": "Keep one evidence-rich caveat for each broad removable limitation type; remove later repetitions anywhere in the script, including body, summary, and conclusion. Audit uncertainty-language caveats that may be core facts rather than removable caveats.",
+    "negative_meaning_sentences_removed": [],
+    "repeated_caveats_removed": [],
+    "caveats_kept_first_mentions": [],
+    "caveats_detected_not_removed": [],
+    "generic_significance_sentences_removed": [],
+    "unclear_commentary_sentences_removed": [],
+    "negative_meaning_removal_count": 0,
+    "repeated_caveat_removal_count": 0,
+    "caveat_detection_count": 0,
+    "caveat_detected_not_removed_count": 0,
+    "generic_significance_removal_count": 0,
+    "unclear_commentary_removal_count": 0,
+    "hard_rules_enforced": [
+      "Negative Meaning Ban",
+      "Generic One Caveat Rule",
+      "Listener Intelligence Rule",
+      "High School Clarity Rule",
+      "Do Not Manufacture Innocence / Anti-Reflex Rule"
+    ]
+  },
+  "authority_boundaries": {
+    "used_quote_packet": false,
+    "used_narrative_plan": false,
+    "used_qa_report": false,
+    "used_external_research": false,
+    "factual_boundary": "input_script_only_plus_basic_story_metadata"
+  },
+  "editor_assessment": {
+    "core_story_question": "Who owns responsibility for the Afghanistan withdrawal failures, and did later congressional oversight clarify that responsibility or turn the evidence into competing official blame stories?",
+    "primary_takeaways": [
+      "The Afghanistan withdrawal story evolved from a chaotic evacuation into a formal accountability fight.",
+      "Later agency reviews documented planning, role, communication, and preparedness failures.",
+      "The House Foreign Affairs Committee produced dueling September 2024 accounts that framed responsibility differently.",
+      "The start line matters: Trump-era commitments shaped the framework, while Biden-era officials made the final decision and executed the withdrawal."
+    ],
+    "significance_gaps_found": [
+      "The original draft stated that Congress produced two official stories but needed a sharper explanation of why that contradiction matters to public accountability.",
+      "The USAID section contained important facts but needed a clearer human consequence tied to tracking people connected to U.S.-funded programs.",
+      "The State Department findings needed stronger listener-level framing around chain of command and crisis execution."
+    ],
+    "accountability_gaps_found": [
+      "The draft hinted that oversight became part of the fight but needed to state the accountability question directly.",
+      "The agency-review material needed a clearer transition from broad blame to concrete responsibility.",
+      "The final act repeated findings without landing forcefully on the split accountability record."
+    ],
+    "implication_gaps_found": [
+      "The contrast between Biden’s July 2021 confidence and the later collapse needed to land as a change in public meaning.",
+      "The State Department review implications were strengthened around preparedness for worst-case speed and scale.",
+      "The dueling reports were reframed as a formal contradiction in the public record, not simply partisan disagreement."
+    ],
+    "listener_questions_strengthened": [
+      "Did later oversight clarify responsibility, or did it give each side an official version of blame?",
+      "Did agencies know who depended on them, how to find those people, and what help they were responsible for giving?",
+      "Where should the story begin when assigning responsibility: the Trump-era withdrawal framework or the Biden-era final execution?"
+    ],
+    "proof_boundary_notes": [
+      "Majority and minority claims remain attributed to their reports.",
+      "State Department and USAID findings remain attributed to the relevant reviews and watchdog report.",
+      "The Abbey Gate tactical claim remains limited to the Defense Department and Central Command review conclusion.",
+      "The edit preserves the distinction between documented failures, allegations, and unresolved responsibility."
+    ],
+    "inherited_rules_applied": [
+      "Promote The Elephant Rule",
+      "Evidence-Led Implication Rule",
+      "Accountability Language Protection",
+      "Narrative Redundancy Control",
+      "Ending Convergence Control",
+      "One Caveat Rule",
+      "Negative Meaning Ban",
+      "Concise and Impactful Rule",
+      "High School Clarity Test"
+    ],
+    "caveats_removed_or_compressed": [
+      "Removed defensive formulations that undercut supported findings after they landed.",
+      "Compressed repeated explanations about the House committee’s limited operational role by focusing on its later role in shaping the public record.",
+      "Reduced repeated end-stage summary language so the close converges on the core takeaway."
+    ],
+    "locked_format_preservation_notes": [
+      "Opening title line preserves the required listener-facing format and uses the approved Story Title.",
+      "Standard opening sentence preserved exactly as it appears in the input script.",
+      "Final show line preserved exactly as it appears in the input script."
+    ],
+    "cleanup_issues_addressed": [
+      "Removed or rewrote negative-meaning constructions and defensive hedges.",
+      "Cut generic explanatory filler around accountability and records.",
+      "Strengthened transitions between evacuation facts, agency reviews, congressional reports, and final takeaway.",
+      "Improved spoken clarity in the State Department and USAID sections.",
+      "Compressed the final act to avoid repeated evidence stacking."
+    ]
+  },
+  "major_changes": [
+    {
+      "change_type": "accountability",
+      "summary": "Reframed the central later development as a formal accountability contradiction rather than simply a congressional dispute.",
+      "why_it_improves_listener_impact": "It gives listeners a clear reason to keep listening: the issue is no longer only what happened in Kabul, but why the later institutions charged with explaining responsibility split into competing official stories.",
+      "proof_boundary_preserved": "The edit attributes each blame frame to the House majority or minority and avoids deciding which account is correct."
+    },
+    {
+      "change_type": "implication",
+      "summary": "Made the oversight question explicit: did later oversight clarify responsibility or give each side an official blame story?",
+      "why_it_improves_listener_impact": "This promotes the central elephant-in-the-room question without converting it into an unsupported answer.",
+      "proof_boundary_preserved": "The question is framed as raised by the dueling reports, not as a proven motive or conclusion."
+    },
+    {
+      "change_type": "significance",
+      "summary": "Sharpened the State Department section around chain of command, senior planning, and worst-case readiness.",
+      "why_it_improves_listener_impact": "It turns process findings into listener-understandable stakes: in a crisis, unclear leadership affects who makes calls, owns lists, and gives instructions.",
+      "proof_boundary_preserved": "The findings remain grounded in the State Department After Action Review."
+    },
+    {
+      "change_type": "significance",
+      "summary": "Strengthened the USAID section by tying the tracking failure to people connected to U.S.-funded programs.",
+      "why_it_improves_listener_impact": "It makes a technical watchdog finding feel concrete and consequential without adding new facts.",
+      "proof_boundary_preserved": "The edit keeps the finding specific to USAID’s role and tracking mechanism."
+    },
+    {
+      "change_type": "compression",
+      "summary": "Compressed repeated explanations in the final act and focused the close on the two competing official blame stories.",
+      "why_it_improves_listener_impact": "The ending lands on the clearest listener takeaway instead of re-listing evidence at length.",
+      "proof_boundary_preserved": "The recap keeps findings, allegations, and unresolved responsibility distinct."
+    },
+    {
+      "change_type": "clarity",
+      "summary": "Rewrote weaker or defensive phrasing into direct documentary narration.",
+      "why_it_improves_listener_impact": "The script sounds more confident and less like a legal memo while staying inside the record supplied by the draft.",
+      "proof_boundary_preserved": "No allegations were converted into proven facts, and no new actors or evidence were added."
+    }
+  ],
+  "edit_risk_notes": [
+    "The approved Story Title says 2024 Afghanistan Withdrawal, while the withdrawal events occurred in 2021; the title was preserved because locked format rules require the approved Story Title.",
+    "The edit strengthens accountability framing around congressional oversight, but keeps the claim at the level of effect and public-record contradiction.",
+    "The script still depends on the input draft’s characterization of the House majority and minority reports; no outside verification was added."
+  ]
+}

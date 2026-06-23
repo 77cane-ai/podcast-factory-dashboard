@@ -1,0 +1,332 @@
+{
+  "plan_metadata": {
+    "created_at": "2026-06-23T14:50:18",
+    "created_by": "generate_script",
+    "program_name": "Podcast Factory Script Generator",
+    "program_version": "V2.4.7",
+    "mode": "mandatory_pre_script_plan",
+    "model": "gpt-5.5",
+    "reasoning_effort": "high",
+    "canonical_story_id": "00171",
+    "story_title": "House Foreign Affairs Committee’s dueling September 2024 Afghanistan withdrawal reports create a formal contradiction record",
+    "quote_packet_file": "C:\\Users\\77can\\OneDrive\\Desktop\\quote_packets\\00171_quote_packet.json"
+  },
+  "narrative_plan": {
+    "planning_metadata": {
+      "planning_mode": "narrative_planning_only",
+      "program_version": "V1.11.12.2"
+    },
+    "story_diagnosis": {
+      "what_changed": "The Afghanistan withdrawal first looked like a sudden collapse, a massive emergency airlift, and a fight over whether the Biden administration had failed or succeeded. Later official records changed the story: agency reviews documented real planning and coordination gaps, while the House Foreign Affairs Committee produced two official and incompatible accounts of who was responsible.",
+      "why_it_matters": "This was the end of America's longest war, with roughly 125,000 people evacuated and the Abbey Gate bombing killing 13 U.S. service members and roughly 160 to 170 Afghan civilians. Years later, the public still does not have one settled official accountability story.",
+      "original_famous_question": "Who was responsible for the chaotic Afghanistan withdrawal and the failure to foresee how fast Kabul would fall?",
+      "wrong_spine_risk": "Do not structure the episode as a year-by-year withdrawal recap, a neutral report-release summary, a partisan scoreboard, or an Abbey Gate legal-aftercare episode. The strongest story is not that reports were released; it is that later accountability itself split into competing official versions.",
+      "episode_justification_statement": "This episode is justified because later official records did not merely add details to the 2021 withdrawal story; they changed the listener-level question from 'Was the withdrawal a success or failure?' to 'Can the public trust the official accountability record when the same investigation produced opposite conclusions?'"
+    },
+    "human_meaning_analysis": {
+      "deepest_human_question": "When a government tells people it has control, what happens when events outrun that confidence and years later the official record still cannot agree on who failed?",
+      "trust_question": "Was the public given a clear and honest account of what officials knew, what they expected, and what went wrong?",
+      "accountability_question": "Who should be held responsible for the planning gaps and execution choices: the officials who set the withdrawal in motion, the officials who completed it, the institutions that prepared for it, or some combination that the official record still disputes?",
+      "elephant_in_the_room_question": "Did later oversight reveal the truth, or did it become another battlefield where each side shaped the same evidence into its own blame story?",
+      "highest_gravity_question": "After a 20-year war ended in chaos and death, why could Congress not produce one settled official account of responsibility?",
+      "why_people_still_care": "People still care because the withdrawal involved service members, Afghan civilians, U.S. citizens, allies, diplomats, aid workers, and military personnel placed under extreme pressure while political leaders argued over whether the crisis was avoidable, inherited, mismanaged, or all of those at once.",
+      "changed_public_understanding": "The later record makes the withdrawal look less like one bad week and more like a layered failure of assumptions, planning, roles, communications, and political accountability."
+    },
+    "major_actor_analysis": [
+      {
+        "actor": "Biden administration",
+        "actor_type": "institution",
+        "early_role": "Completed the U.S. withdrawal from Afghanistan and oversaw the August 2021 evacuation.",
+        "later_developments": "President Biden defended the evacuation as an extraordinary mission and framed the final choice as withdrawal versus renewed war. Later, the State Department After Action Review found insufficient senior-level worst-case planning across both administrations, and the House majority report blamed the Biden-Harris administration for delayed planning, public messaging failures, and prioritizing optics over security.",
+        "later_consequences": "Subject of congressional investigation, hearings, subpoenas, testimony, and formal majority criticism. No criminal or formal disciplinary finding against Biden officials appears in the provided record.",
+        "narrative_reversal": "Then: the administration publicly defended a controlled end to the war and a historic airlift. Now: it became the central target of a House majority accountability report, while the minority report contested that blame frame.",
+        "importance": "CRITICAL",
+        "why_listeners_should_care": "The main accountability fight turns on whether the withdrawal is understood primarily as Biden administration execution failure or as the end stage of an inherited and constrained policy.",
+        "recommended_script_presence": "REQUIRED"
+      },
+      {
+        "actor": "Trump administration",
+        "actor_type": "institution",
+        "early_role": "Negotiated the February 2020 Doha Agreement and ordered troop drawdowns before President Biden took office.",
+        "later_developments": "The House minority report made Trump-era decisions central, saying President Trump initiated the U.S. withdrawal from Afghanistan. The State AAR says key questions remained unanswered when Trump left office. The House majority acknowledged problems with the Doha process but still focused its main blame on Biden-era execution.",
+        "later_consequences": "Became central to the minority counter-narrative and to the dispute over where the accountability clock should start. No legal consequence appears in the provided record.",
+        "narrative_reversal": "Then: immediate public debate often centered on Biden's handling of the final withdrawal. Now: later official records, especially the minority report, moved the origin point back to Doha and Trump-era drawdowns.",
+        "importance": "CRITICAL",
+        "why_listeners_should_care": "If the story starts with Doha, the withdrawal looks different than if it starts with Kabul's fall in August 2021.",
+        "recommended_script_presence": "REQUIRED"
+      },
+      {
+        "actor": "House Foreign Affairs Committee majority and minority",
+        "actor_type": "institution",
+        "early_role": "Not an original 2021 operational actor; later became the main congressional institution shaping the public accountability record.",
+        "later_developments": "In September 2024, Chairman Michael McCaul's majority and Ranking Member Gregory Meeks's minority released competing official reports from the same investigation. The majority blamed Biden administration planning, timing, security decisions, and public messaging. The minority argued the majority cherry-picked testimony, ignored Trump-era causes, and overstated Biden blame.",
+        "later_consequences": "Created the formal contradiction record at the center of this episode: one committee investigation, two official and incompatible interpretations.",
+        "narrative_reversal": "Then: congressional oversight might have been expected to clarify responsibility. Now: oversight itself became proof that the accountability story was contested.",
+        "importance": "CRITICAL",
+        "why_listeners_should_care": "This is the episode's central later development: Congress did not give the public one clear answer about responsibility.",
+        "recommended_script_presence": "REQUIRED"
+      },
+      {
+        "actor": "U.S. Department of State",
+        "actor_type": "agency",
+        "early_role": "Central foreign-affairs, embassy, consular, and evacuation coordination actor during the withdrawal.",
+        "later_developments": "The State Department After Action Review found insufficient senior-level consideration of worst-case scenarios, unclear State leadership in noncombatant evacuation planning, unresolved decisions about at-risk Afghans, lack of centralized case management, and communication problems. The AAR also praised State personnel for agility, determination, and dedication.",
+        "later_consequences": "Produced internal recommendations for crisis leadership, software, red-team capability, tabletop exercises, clearer communications, and better crisis support. State also remained a subject of House scrutiny and testimony.",
+        "narrative_reversal": "Then: State personnel were part of the visible emergency evacuation effort. Now: State's own review became a key record of both frontline performance and senior-level planning weaknesses.",
+        "importance": "CRITICAL",
+        "why_listeners_should_care": "State is the clearest institutional example of the episode's larger pattern: heroic work under pressure combined with documented preparedness problems.",
+        "recommended_script_presence": "REQUIRED"
+      },
+      {
+        "actor": "USAID",
+        "actor_type": "agency",
+        "early_role": "U.S. development agency whose implementing-organization staff faced evacuation and relocation risks connected to U.S.-funded work in Afghanistan.",
+        "later_developments": "The USAID Office of Inspector General found that USAID lacked a clear evacuation-related role, lacked a mechanism to accurately track implementing-organization staff, had staffing and communication problems, and faced delayed or unclear guidance issues.",
+        "later_consequences": "The OIG made seven recommendations; USAID agreed with six and disagreed with one.",
+        "narrative_reversal": "Then: USAID could seem peripheral to a military and diplomatic evacuation story. Now: the watchdog report showed a concrete preparedness gap affecting people connected to U.S. programs.",
+        "importance": "HIGH",
+        "why_listeners_should_care": "USAID turns the story from broad political blame into a specific question: did agencies know who they were responsible for and how to help them?",
+        "recommended_script_presence": "STRONGLY_RECOMMENDED"
+      },
+      {
+        "actor": "Department of Defense and CENTCOM",
+        "actor_type": "agency",
+        "early_role": "Executed military aspects of the evacuation and later reviewed the Abbey Gate attack.",
+        "later_developments": "DOD and CENTCOM's April 2024 supplemental review reaffirmed the original Abbey Gate investigation and found the sniper team had not identified the actual bomber before the attack.",
+        "later_consequences": "The official military account narrowed one dramatic preventability claim, while the broader withdrawal accountability fight continued.",
+        "narrative_reversal": "Then: some public claims suggested the attack may have been preventable at the tactical level. Now: DOD/CENTCOM reaffirmed that the actual bomber had not been identified by the sniper team.",
+        "importance": "MEDIUM",
+        "why_listeners_should_care": "This protects the episode from turning Abbey Gate into an unsupported preventability claim.",
+        "recommended_script_presence": "OPTIONAL"
+      },
+      {
+        "actor": "Mohammad Sharifullah",
+        "actor_type": "person",
+        "early_role": "No original public role in the 2021 withdrawal narrative appears in the provided record.",
+        "later_developments": "The United States later charged him in connection with ISIS-K material support allegations. In April 2026, he was convicted of participating in a material-support conspiracy to ISIS-K, while AP reported the jury deadlocked on whether deaths at Abbey Gate resulted from that conspiracy.",
+        "later_consequences": "Criminal conviction with an important legal limit on the death-resulting question.",
+        "narrative_reversal": "Then: not part of the public withdrawal debate. Now: part of the later criminal-court aftermath of Abbey Gate.",
+        "importance": "MEDIUM",
+        "why_listeners_should_care": "The legal aftermath shows the Abbey Gate story continued years later, but it does not resolve the withdrawal-planning accountability question.",
+        "recommended_script_presence": "OPTIONAL"
+      }
+    ],
+    "central_unresolved_controversy": "the central controversy is whether the Afghanistan withdrawal's failures should be understood mainly as Biden administration execution and messaging failures, as the House majority concluded, or as the result of Trump-era commitments, inherited constraints, and dangerous tradeoffs that Biden officials then had to manage, as the House minority argued. Official agency reviews support real planning and preparedness gaps, but they do not settle the political responsibility fight.",
+    "primary_listener_question": "After the Afghanistan withdrawal, did later accountability tell the public what really went wrong, or did it split into competing official blame stories?",
+    "narrative_spine": "At first, the story was about a chaotic two-week evacuation, Biden's public defense of ending the war, and the shock of Kabul's rapid fall. Later evidence suggests the story is now about something deeper: documented planning gaps, known risks, unclear responsibilities, and a congressional accountability record that broke into two incompatible official versions.",
+    "primary_takeaway": {
+      "takeaway": "Years later, the official record did not produce one settled explanation for the Afghanistan withdrawal; it produced documented planning failures and a formal split over who should be held responsible.",
+      "why_it_matters": "The public can see more of what went wrong than it could in 2021, but the central accountability question remains fought over by the very institutions meant to clarify it.",
+      "listener_memory_sentence": "The Afghanistan withdrawal story changed from a chaotic evacuation into a fight over accountability, because later official records found real planning gaps but Congress split into two competing versions of blame.",
+      "narrative_role": "headline_takeaway",
+      "evidence_anchors": [
+        "September 9, 2024 House Foreign Affairs Committee majority and minority reports reached conflicting conclusions from the same investigation.",
+        "House majority report alleged the Biden administration prioritized withdrawal optics over security and misled the public.",
+        "House minority report argued President Trump initiated the withdrawal and accused the majority of cherry-picking testimony.",
+        "State Department AAR found insufficient senior-level consideration of worst-case scenarios across both administrations.",
+        "USAID OIG found USAID lacked a clear evacuation-related role and lacked a reliable mechanism to track implementing-organization staff."
+      ],
+      "accuracy_risks_to_avoid": [
+        "Claiming either House report definitively proves the full account of responsibility.",
+        "Stating as fact that Biden officials intentionally lied to the public.",
+        "Claiming Trump-era decisions alone caused Kabul's fall or the evacuation crisis.",
+        "Turning documented planning gaps into proof that specific deaths or the Abbey Gate bombing would have been prevented.",
+        "Treating the State AAR as a complete review of every policy choice by both administrations."
+      ],
+      "de_emphasize": [
+        "Transcript release mechanics and the exact sequence of 2024 releases.",
+        "Long chronology of every troop-drawdown decision.",
+        "Partisan horse-race framing.",
+        "Detailed reform checklists unless used briefly to show concrete consequences.",
+        "Sharifullah prosecution unless the script has already set up Abbey Gate legal aftermath."
+      ],
+      "must_emphasize": true
+    },
+    "supporting_takeaways": [
+      {
+        "rank": 1,
+        "takeaway": "Later reviews made the withdrawal look less like one sudden surprise and more like a crisis where leaders and agencies were not fully prepared for the worst-case speed and scale.",
+        "why_it_matters": "That changes public understanding because the question is not only whether Kabul fell fast; it is whether government systems had prepared for the possibility that the worst case could arrive quickly.",
+        "narrative_role": "supporting_takeaway",
+        "evidence_anchors": [
+          "State AAR found insufficient senior-level consideration of worst-case scenarios and how quickly they might follow under both administrations.",
+          "State AAR found State participation in military evacuation planning was hindered because it was unclear who in State had the lead.",
+          "State AAR found senior officials had not made clear decisions on the universe of at-risk Afghans or where they would be taken by the time the operation started.",
+          "State AAR found lack of centralized case management and communication problems.",
+          "State AAR noted concerns about loss of military key enablers and Diplomatic Security warnings about accepted risk.",
+          "USAID OIG found USAID lacked a clear role and lacked a mechanism to accurately track implementing-organization staff."
+        ],
+        "accuracy_risks_to_avoid": [
+          "Claiming officials had certain knowledge of the exact collapse timeline.",
+          "Claiming these preparedness gaps caused Kabul's fall.",
+          "Claiming these preparedness gaps caused the Abbey Gate deaths.",
+          "Flattening the State AAR into a failure-only finding while ignoring its praise for personnel and the evacuation scale.",
+          "Overstating USAID's role as if it controlled the evacuation."
+        ],
+        "de_emphasize": [
+          "Every individual AAR recommendation.",
+          "Technical details of crisis-management software.",
+          "Acronyms such as NEO unless explained once in plain language.",
+          "Minor agency-process details that do not show a new preparedness gap."
+        ]
+      },
+      {
+        "rank": 2,
+        "takeaway": "The responsibility fight depends on where the story starts: Biden owned the final withdrawal decision and execution, but later records also moved the start line back to the Trump-era Doha deal and troop drawdowns.",
+        "why_it_matters": "A listener's view of accountability changes depending on whether the withdrawal is framed as one administration's final execution failure or as a two-administration chain of decisions, constraints, warnings, and tradeoffs.",
+        "narrative_role": "supporting_takeaway",
+        "evidence_anchors": [
+          "February 2020 Doha Agreement committed the United States to a withdrawal timeline under the Trump administration.",
+          "House minority report stated that President Trump initiated the U.S. withdrawal from Afghanistan.",
+          "State AAR said key questions remained unanswered when Trump left office.",
+          "President Biden publicly framed the final decision as following through on withdrawal versus escalating with more troops and renewed war.",
+          "House majority report said Biden administration officials ignored warnings and prioritized optics over security.",
+          "House minority report argued stopping or reversing withdrawal risked renewed Taliban attacks and that Biden officials undertook a substantial review."
+        ],
+        "accuracy_risks_to_avoid": [
+          "Saying Biden had no agency because he inherited the withdrawal.",
+          "Saying Trump alone caused the final evacuation crisis.",
+          "Treating the majority's warning interpretation as proven fact.",
+          "Treating the minority's renewed-war framing as proven fact.",
+          "Collapsing contested advice, policy choices, and causation into one simple blame sentence."
+        ],
+        "de_emphasize": [
+          "A full Doha Agreement explainer beyond what is needed to show the inherited framework.",
+          "Every named adviser unless needed for decision-chain clarity.",
+          "Detailed prisoner-release discussion unless the script needs one concise example of minority framing.",
+          "Repeating that responsibility is unresolved after the point has been established."
+        ]
+      }
+    ],
+    "recommended_script_structure": [
+      {
+        "section_role": "opening",
+        "purpose": "Start with the human stakes and the original public understanding, then introduce the later contradiction as the reason for revisiting the story.",
+        "must_include": [
+          "Open with the end of a 20-year war, Kabul's rapid fall, the two-week evacuation through Hamid Karzai International Airport, roughly 125,000 evacuees, and Abbey Gate.",
+          "Use Biden's July 2021 'no circumstance' embassy-roof assurance as the clean early public-confidence contrast, while noting the evacuation was not literally from the embassy roof.",
+          "Briefly include Biden's later defense of the evacuation as an extraordinary mission only to set up the later complication.",
+          "Pivot quickly to the main update: by September 2024, one House investigation had produced two official and conflicting accountability stories."
+        ],
+        "avoid": [
+          "Opening with committee report dates or source categories.",
+          "Graphic Abbey Gate detail.",
+          "A full chronological recap of the war.",
+          "Treating the evacuation only as failure while ignoring its scale.",
+          "Do not repeat status-reminder or proof-boundary language after the first necessary mention; the final signature line is enough."
+        ]
+      },
+      {
+        "section_role": "primary_takeaway",
+        "purpose": "State the central meaning plainly: later accountability produced more evidence but not one settled official explanation.",
+        "must_include": [
+          "Begin with the primary takeaway in direct language.",
+          "Introduce the House Foreign Affairs Committee majority and minority as the central later-accountability actors.",
+          "Attribute the majority claim that Biden officials prioritized optics over security and misled the public.",
+          "Attribute the minority counterclaim that Trump initiated the withdrawal and that the majority cherry-picked or distorted the record.",
+          "Explain why this matters: the same investigation became two incompatible official records."
+        ],
+        "avoid": [
+          "Deciding which report is correct.",
+          "Using 'Biden lied' as a fact.",
+          "Using 'Trump caused it' as a fact.",
+          "Letting the section become a summary of report publication mechanics.",
+          "Do not repeat status-reminder or proof-boundary language after the first necessary mention; the final signature line is enough."
+        ]
+      },
+      {
+        "section_role": "supporting_takeaway_1",
+        "purpose": "Show what later agency reviews revealed about preparedness gaps and why that changes the story from one bad week to a deeper institutional readiness problem.",
+        "must_include": [
+          "State that later reviews showed real planning and coordination gaps before describing any report.",
+          "Use the State AAR finding of insufficient worst-case planning across both administrations.",
+          "Use one or two concrete State examples: unclear State lead for evacuation planning, unresolved at-risk Afghan categories and destinations, or lack of centralized case management.",
+          "Use USAID OIG as the narrow concrete example: unclear role and no accurate tracking mechanism for implementing-organization staff.",
+          "Preserve the distinction between senior-level planning critique and frontline personnel performance."
+        ],
+        "avoid": [
+          "Claiming the gaps caused specific deaths.",
+          "Overloading the listener with every AAR recommendation.",
+          "Using unexplained bureaucratic language.",
+          "Making USAID sound like it controlled airport access or the evacuation itself.",
+          "Do not repeat status-reminder or proof-boundary language after the first necessary mention; the final signature line is enough."
+        ]
+      },
+      {
+        "section_role": "supporting_takeaway_2",
+        "purpose": "Explain why responsibility remains contested by showing that the accountability fight depends on the starting point and the decision frame.",
+        "must_include": [
+          "State that the start line matters.",
+          "Explain the Trump-era Doha framework in one concise sentence.",
+          "Explain Biden's final decision frame: follow through with withdrawal or risk renewed war and more troops.",
+          "Contrast that with the majority's view that Biden officials ignored warnings and executed the withdrawal badly.",
+          "Use the State AAR's both-administrations worst-case-planning finding as the bridge between the two partisan frames."
+        ],
+        "avoid": [
+          "A long Doha Agreement explainer.",
+          "Turning the section into a Trump-versus-Biden debate show.",
+          "Suggesting inherited constraints erase later execution choices.",
+          "Suggesting final execution choices erase inherited constraints.",
+          "Do not repeat status-reminder or proof-boundary language after the first necessary mention; the final signature line is enough."
+        ]
+      },
+      {
+        "section_role": "closing",
+        "purpose": "Close on what changed in public understanding: the story became an accountability contradiction backed by documented planning gaps, not a clean resolution.",
+        "must_include": [
+          "Return to the original question of who was responsible for the chaotic withdrawal.",
+          "State the changed understanding once: later records found planning gaps, but Congress split over what those gaps mean and who owns them.",
+          "If Abbey Gate tactical preventability was mentioned earlier, include only a brief DOD/CENTCOM boundary that the sniper team had not identified the actual bomber.",
+          "If the Sharifullah prosecution is used, keep it to one brief line and preserve the verdict limit that the jury deadlocked on whether deaths resulted from the conspiracy.",
+          "End with the required final line line: And now—you know more about what REALLY happened."
+        ],
+        "avoid": [
+          "Introducing major new legal detail in the final moments.",
+          "Repeating multiple unresolved-status caveats.",
+          "Ending on procedure, report dates, or transcript mechanics.",
+          "Creating a false both-sides equivalence; close on the documented contradiction and the planning gaps.",
+          "Do not repeat status-reminder or proof-boundary language after the first necessary mention; the final signature line is enough.",
+          "Do not add a separate status recap; close on what changed and then use the required final line."
+        ]
+      }
+    ],
+    "style_guidance": {
+      "target_audience": "bright ten-year-old who follows major news stories",
+      "plain_language_rules": [
+        "Use 'emergency evacuation' before or instead of 'noncombatant evacuation operation.'",
+        "Say 'one investigation produced two official stories' instead of relying on procedural committee language.",
+        "Use short sentences and one idea per sentence.",
+        "Explain every institution by what it did, not by its acronym.",
+        "Keep dates to only the few that change meaning: July 2021, August 2021, June 2023, March 2024, and September 2024 if needed."
+      ],
+      "phrases_to_avoid": [
+        "botched withdrawal",
+        "Biden lied",
+        "Trump caused the withdrawal disaster",
+        "both sides say",
+        "the reports dropped",
+        "formal contradiction record",
+        "NEO planning posture",
+        "stakeholder equities"
+      ],
+      "preferred_phrases": [
+        "one investigation produced two official stories",
+        "the start line matters",
+        "documented planning gaps",
+        "the government had more warning than the early public confidence suggested",
+        "the later record complicated the simple blame story",
+        "frontline personnel performed under extreme pressure",
+        "accountability split in two"
+      ]
+    },
+    "script_generation_instruction": "Write only the listener script using the required structure: opening, primary takeaway, supporting takeaway one, supporting takeaway two, and closing. Do not add extra sections. Make the primary takeaway the organizing idea: later official records found real planning gaps, but congressional accountability split into competing official blame stories. Attribute House majority and minority claims carefully. Do not decide which report is correct. Do not claim planning gaps caused Abbey Gate deaths or Kabul's fall. Keep report mechanics, transcript-release details, and legal aftermath brief unless they directly support the takeaway. Use plain spoken language, short sentences, and the required final line: And now—you know more about what REALLY happened."
+  },
+  "authority_boundaries": {
+    "modifies_files": true,
+    "modifies_stories_json": false,
+    "modifies_queue": false,
+    "writes_listener_script": false,
+    "performs_factual_qa": false,
+    "purpose": "mandatory_writer_contract"
+  }
+}

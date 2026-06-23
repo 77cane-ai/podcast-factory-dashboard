@@ -1,0 +1,28 @@
+{
+  "revision_metadata": {
+    "created_at": "2026-06-23T14:55:54",
+    "created_by": "jarvis_light",
+    "program_name": "Podcast Factory Jarvis Light",
+    "program_version": "V1.13.11",
+    "revision_mode": "post_qa_editor_handoff",
+    "canonical_story_id": "00171",
+    "story_title": "House Foreign Affairs Committee’s dueling September 2024 Afghanistan withdrawal reports c…",
+    "script_file": "C:\\Users\\77can\\OneDrive\\Desktop\\scripts\\00171_script_v2.txt",
+    "qa_report_file": "C:\\Users\\77can\\OneDrive\\Desktop\\qa_reports\\00171_qa_report_v2.json",
+    "output_file": "C:\\Users\\77can\\OneDrive\\Desktop\\scripts\\00171_script_v3.txt",
+    "input_script_version": 2,
+    "output_script_version": 3
+  },
+  "revision_summary": "Script Editor output selected as finalization input after final QA.",
+  "human_review_recommended": false,
+  "selected_issues": [],
+  "qa_issue_resolution_map": [],
+  "legacy_revision_decisions_raw": [],
+  "deterministic_repairs": [],
+  "post_llm_deterministic_repairs": [],
+  "post_processing": {
+    "source": "script_editor_agent",
+    "editor_handoff": true,
+    "qa_findings_forwarded_to_editor": true
+  }
+}

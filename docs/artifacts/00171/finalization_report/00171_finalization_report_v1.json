@@ -1,0 +1,176 @@
+{
+  "finalization_metadata": {
+    "created_at": "2026-06-23T14:55:55",
+    "created_by": "generate_script",
+    "program_name": "Podcast Factory Script Generator",
+    "program_version": "V2.4.7",
+    "mode": "finalize",
+    "canonical_story_id": "00171",
+    "story_title": "House Foreign Affairs Committee’s dueling September 2024 Afghanistan withdrawal reports create a formal contradiction record",
+    "script_file": "C:\\Users\\77can\\OneDrive\\Desktop\\scripts\\00171_script_v3.txt",
+    "qa_report_file": "C:\\Users\\77can\\OneDrive\\Desktop\\qa_reports\\00171_qa_report_v2.json",
+    "revision_decision_file": "C:\\Users\\77can\\OneDrive\\Desktop\\script_revisions\\00171_revision_decisions_v2.json",
+    "final_script_file": "C:\\Users\\77can\\OneDrive\\Desktop\\scripts\\final\\00171_final_script_v1.txt"
+  },
+  "finalization_result": {
+    "status": "publishable_with_waived_warnings",
+    "approved_for_ttv": true,
+    "summary": "QA passed with warnings; remaining findings are non-blocking and waived under editorial policy.",
+    "qa_status": "pass_with_warnings",
+    "blocking_issue_count": 0,
+    "warning_count": 3,
+    "suggestion_count": 3
+  },
+  "validation_passes": {
+    "factual_support": "pass",
+    "quote_integrity": "pass",
+    "unsupported_implications": "pass",
+    "update_story_framing": "not_applicable",
+    "narrative_coherence": "pass",
+    "tts_readiness": "warn",
+    "style_compliance": "pass",
+    "process_leakage": "pass",
+    "closing_line": "pass",
+    "coverage_bias_protection": "pass",
+    "public_title": "warn",
+    "ending_alignment": "warn",
+    "promise_fulfillment": "pass"
+  },
+  "classified_qa_findings": [
+    {
+      "issue_id": "QA-007",
+      "category": "tts",
+      "severity": "suggestion",
+      "classification": "waived_polish",
+      "policy_reason": "Suggestion-level QA finding; acceptable for finalization unless David chooses to polish manually.",
+      "recommended_fix": "Spell out or convert to natural spoken phrasing if needed.",
+      "requires_human_review": false
+    },
+    {
+      "issue_id": "QA-008",
+      "category": "public_title",
+      "severity": "warning",
+      "classification": "waived_nonblocking",
+      "policy_reason": "Non-blocking QA finding under finalization policy.",
+      "recommended_fix": "Replace the opening public title with one that correctly orients listeners to the 2021 withdrawal and the September 2024 dueling-report accountability angle, without implying the withdrawal happened in 2024.",
+      "requires_human_review": false
+    },
+    {
+      "issue_id": "QA-009",
+      "category": "closing",
+      "severity": "suggestion",
+      "classification": "waived_polish",
+      "policy_reason": "Suggestion-level QA finding; acceptable for finalization unless David chooses to polish manually.",
+      "recommended_fix": "Use the approved unresolved closing line exactly: 'And now—you know more about what REALLY happened.'",
+      "requires_human_review": false
+    },
+    {
+      "issue_id": "QA-010",
+      "category": "ending_alignment",
+      "severity": "warning",
+      "classification": "waived_nonblocking",
+      "policy_reason": "Non-blocking QA finding under finalization policy.",
+      "recommended_fix": "Keep the close centered on what the later record clarifies versus what remains institutionally contested, so the unresolved final line feels fully earned.",
+      "requires_human_review": false
+    },
+    {
+      "issue_id": "QA-011",
+      "category": "tts",
+      "severity": "warning",
+      "classification": "waived_ttv_polish",
+      "policy_reason": "TTV warning affects delivery polish, not factual or editorial readiness.",
+      "recommended_fix": "If needed, keep the first mention fully spelled out and use a natural spoken pattern consistently thereafter.",
+      "requires_human_review": false
+    },
+    {
+      "issue_id": "QA-012",
+      "category": "public_title",
+      "severity": "suggestion",
+      "classification": "waived_polish",
+      "policy_reason": "Suggestion-level QA finding; acceptable for finalization unless David chooses to polish manually.",
+      "recommended_fix": "Use a title that signals this is about how the accountability record changed, not just a generic retrospective on a 'botched withdrawal.'",
+      "requires_human_review": false
+    }
+  ],
+  "warnings_waived_by_editorial_policy": [
+    {
+      "issue_id": "QA-007",
+      "category": "tts",
+      "severity": "suggestion",
+      "classification": "waived_polish",
+      "policy_reason": "Suggestion-level QA finding; acceptable for finalization unless David chooses to polish manually.",
+      "recommended_fix": "Spell out or convert to natural spoken phrasing if needed.",
+      "requires_human_review": false
+    },
+    {
+      "issue_id": "QA-008",
+      "category": "public_title",
+      "severity": "warning",
+      "classification": "waived_nonblocking",
+      "policy_reason": "Non-blocking QA finding under finalization policy.",
+      "recommended_fix": "Replace the opening public title with one that correctly orients listeners to the 2021 withdrawal and the September 2024 dueling-report accountability angle, without implying the withdrawal happened in 2024.",
+      "requires_human_review": false
+    },
+    {
+      "issue_id": "QA-009",
+      "category": "closing",
+      "severity": "suggestion",
+      "classification": "waived_polish",
+      "policy_reason": "Suggestion-level QA finding; acceptable for finalization unless David chooses to polish manually.",
+      "recommended_fix": "Use the approved unresolved closing line exactly: 'And now—you know more about what REALLY happened.'",
+      "requires_human_review": false
+    },
+    {
+      "issue_id": "QA-010",
+      "category": "ending_alignment",
+      "severity": "warning",
+      "classification": "waived_nonblocking",
+      "policy_reason": "Non-blocking QA finding under finalization policy.",
+      "recommended_fix": "Keep the close centered on what the later record clarifies versus what remains institutionally contested, so the unresolved final line feels fully earned.",
+      "requires_human_review": false
+    },
+    {
+      "issue_id": "QA-011",
+      "category": "tts",
+      "severity": "warning",
+      "classification": "waived_ttv_polish",
+      "policy_reason": "TTV warning affects delivery polish, not factual or editorial readiness.",
+      "recommended_fix": "If needed, keep the first mention fully spelled out and use a natural spoken pattern consistently thereafter.",
+      "requires_human_review": false
+    },
+    {
+      "issue_id": "QA-012",
+      "category": "public_title",
+      "severity": "suggestion",
+      "classification": "waived_polish",
+      "policy_reason": "Suggestion-level QA finding; acceptable for finalization unless David chooses to polish manually.",
+      "recommended_fix": "Use a title that signals this is about how the accountability record changed, not just a generic retrospective on a 'botched withdrawal.'",
+      "requires_human_review": false
+    }
+  ],
+  "unresolved_blockers": [],
+  "revision_decision_summary": {
+    "available": true,
+    "revision_summary": "Script Editor output selected as finalization input after final QA.",
+    "human_review_recommended": false
+  },
+  "tts_delivery_polish": {
+    "leading_blank_line_inserted": true,
+    "pronunciation_changes": [],
+    "time_changes": [],
+    "large_number_changes": [],
+    "emphasis_changes": [],
+    "homograph_cleanup_changes": [],
+    "pause_changes": [
+      "(?<!\\.\\.\\.)\\n(And then came)"
+    ],
+    "final_ampm_cleanup_changes": [],
+    "spoken_parse_pause_repairs": []
+  },
+  "audit": {
+    "finalization_did_not_modify_stories_json": true,
+    "finalization_did_not_modify_production_queue": true,
+    "finalization_did_not_modify_qa_report": true,
+    "finalization_copied_listener_script_only": true
+  }
+}

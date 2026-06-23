@@ -1,0 +1,204 @@
+{
+  "report_metadata": {
+    "qa_report_version": "1.0",
+    "created_at": "2026-06-23T14:54:42",
+    "created_by": "qa_agent",
+    "program_name": "Podcast Factory QA Agent",
+    "program_version": "V1.0.17",
+    "canonical_story_id": "00171",
+    "story_title": "House Foreign Affairs Committee’s dueling September 2024 Afghanistan withdrawal reports create a formal contradiction record",
+    "script_file": "C:\\Users\\77can\\OneDrive\\Desktop\\scripts\\00171_script_v2.txt",
+    "quote_packet_file": "C:\\Users\\77can\\OneDrive\\Desktop\\quote_packets\\00171_quote_packet.json",
+    "output_file": "C:\\Users\\77can\\OneDrive\\Desktop\\qa_reports\\00171_qa_report_v2.json",
+    "revision_cycle": 2,
+    "script_version": 2,
+    "dry_run": false,
+    "llm_review_used": true,
+    "llm_error": "",
+    "qa_issue_registry_file": "C:\\Users\\77can\\OneDrive\\Desktop\\qa_issue_registry\\00171_qa_issue_registry.json",
+    "stable_issue_ids_applied": true
+  },
+  "qa_result": {
+    "status": "pass_with_warnings",
+    "summary": "QA completed as advisory guidance using deterministic + LLM checks: 0 high-priority blocking finding(s), 3 warning(s), 3 suggestion(s). Blocking now means fix-first priority, not a production stop.",
+    "blocking_issue_count": 0,
+    "warning_count": 3,
+    "suggestion_count": 3,
+    "advisory_only": true,
+    "blocking_semantics": "highest_priority_fix_first_not_production_stop",
+    "priority_issue_count": 0
+  },
+  "validation_passes": {
+    "factual_support": "pass",
+    "quote_integrity": "pass",
+    "unsupported_implications": "pass",
+    "update_story_framing": "not_applicable",
+    "narrative_coherence": "pass",
+    "tts_readiness": "warn",
+    "style_compliance": "pass",
+    "process_leakage": "pass",
+    "closing_line": "pass",
+    "coverage_bias_protection": "pass",
+    "public_title": "warn",
+    "ending_alignment": "warn",
+    "promise_fulfillment": "pass"
+  },
+  "issues": [
+    {
+      "issue_id": "QA-007",
+      "severity": "suggestion",
+      "category": "tts",
+      "script_location": "line 232",
+      "problem": "Potential TTS-readiness issue detected: unexpanded_or_heavy_acronym (USAID)",
+      "evidence_boundary": "factory_style_rule",
+      "supporting_reference": "",
+      "recommended_fix": "Spell out or convert to natural spoken phrasing if needed.",
+      "requires_regeneration": false,
+      "transient_issue_id": "QA-001",
+      "stable_issue_id": "QA-007",
+      "qa_issue_fingerprint": "tts:4e0f6a25afce139f"
+    },
+    {
+      "issue_id": "QA-008",
+      "severity": "warning",
+      "category": "public_title",
+      "script_location": "opening title",
+      "problem": "The public-facing opening title says 'The Botched 2024 Afghanistan Withdrawal,' which is factually incorrect and audience-confusing. The withdrawal occurred in 2021; 2024 refers to the later committee reports. The title also shifts the story from the packet's actual angle about dueling 2024 reports into a different, misleading premise.",
+      "evidence_boundary": "story_metadata",
+      "supporting_reference": "Canonical title: 'House Foreign Affairs Committee’s dueling September 2024 Afghanistan withdrawal reports create a formal contradiction record'; event timing in packet: withdrawal crisis concentrated August 15-31, 2021; later update period includes 2024 reports.",
+      "recommended_fix": "Replace the opening public title with one that correctly orients listeners to the 2021 withdrawal and the September 2024 dueling-report accountability angle, without implying the withdrawal happened in 2024.",
+      "requires_regeneration": false,
+      "source": "llm_review",
+      "calibration_note": "V1.0.17: downgraded from blocking because this is a style/title/TTS/narrative advisory category; QA no longer stops production.",
+      "transient_issue_id": "QA-002",
+      "stable_issue_id": "QA-008",
+      "qa_issue_fingerprint": "public title:00a63d779d5beac9"
+    },
+    {
+      "issue_id": "QA-009",
+      "severity": "suggestion",
+      "category": "closing",
+      "script_location": "final line",
+      "problem": "The script ends with 'And now—you know what REALLY happened.' But the script itself repeatedly frames the central accountability question as unresolved and split into two official stories. For an unresolved central mystery, the approved required ending is the unresolved variant.",
+      "evidence_boundary": "factory_style_rule",
+      "supporting_reference": "Show-format final lines: unresolved central mystery -> 'And now—you know more about what REALLY happened.' Script text says: 'There is still no single official accountability story,' 'two official stories,' 'did not give the public one settled answer.'",
+      "recommended_fix": "Use the approved unresolved closing line exactly: 'And now—you know more about what REALLY happened.'",
+      "requires_regeneration": false,
+      "source": "llm_review",
+      "calibration_note": "Approved final show line detected; any certainty concern is advisory only.",
+      "transient_issue_id": "QA-003",
+      "stable_issue_id": "QA-009",
+      "qa_issue_fingerprint": "closing:7980787ad15b83c0"
+    },
+    {
+      "issue_id": "QA-010",
+      "severity": "warning",
+      "category": "ending_alignment",
+      "script_location": "final paragraph before closing line",
+      "problem": "The close mostly supports unresolved framing, but because the script spends significant time emphasizing that Congress produced contradictory official records and no settled answer, the lead-in should avoid sounding like full resolution immediately before the final line.",
+      "evidence_boundary": "factory_style_rule",
+      "supporting_reference": "Approved unresolved ending is required when the central mystery remains unresolved.",
+      "recommended_fix": "Keep the close centered on what the later record clarifies versus what remains institutionally contested, so the unresolved final line feels fully earned.",
+      "requires_regeneration": false,
+      "source": "llm_review",
+      "transient_issue_id": "QA-004",
+      "stable_issue_id": "QA-010",
+      "qa_issue_fingerprint": "ending alignment:0b8d42e33cd90583"
+    },
+    {
+      "issue_id": "QA-011",
+      "severity": "warning",
+      "category": "tts",
+      "script_location": "line 232 / USAID references",
+      "problem": "Potential TTS-readiness issue: heavy acronym usage around 'USAID,' even though one pronunciation assist is provided.",
+      "evidence_boundary": "factory_style_rule",
+      "supporting_reference": "Deterministic QA issue QA-001.",
+      "recommended_fix": "If needed, keep the first mention fully spelled out and use a natural spoken pattern consistently thereafter.",
+      "requires_regeneration": false,
+      "source": "llm_review",
+      "transient_issue_id": "QA-005",
+      "stable_issue_id": "QA-011",
+      "qa_issue_fingerprint": "tts:5b5173690bdf219f"
+    },
+    {
+      "issue_id": "QA-012",
+      "severity": "suggestion",
+      "category": "public_title",
+      "script_location": "opening title",
+      "problem": "Beyond the date error, 'botched' narrows the story too early and undersells the actual later-development angle preserved in the packet: a formal contradiction record created by dueling committee reports.",
+      "evidence_boundary": "story_metadata",
+      "supporting_reference": "Packet story angle emphasizes the contradiction itself as the later development.",
+      "recommended_fix": "Use a title that signals this is about how the accountability record changed, not just a generic retrospective on a 'botched withdrawal.'",
+      "requires_regeneration": false,
+      "source": "llm_review",
+      "transient_issue_id": "QA-006",
+      "stable_issue_id": "QA-012",
+      "qa_issue_fingerprint": "public title:5ca3c1eb36fabd7c"
+    }
+  ],
+  "positive_findings": [
+    {
+      "category": "style",
+      "note": "Standard opening phrase detected."
+    },
+    {
+      "category": "closing",
+      "note": "Approved final line detected exactly."
+    },
+    {
+      "category": "quote_integrity",
+      "note": "All detected direct quotes matched quote packet direct quotes."
+    },
+    {
+      "category": "factual_support",
+      "note": "Core factual spine matches the packet well: 2021 withdrawal timeline, evacuation scale, Abbey Gate deaths, State AAR findings, USAID OIG findings, and the September 2024 dueling HFAC reports."
+    },
+    {
+      "category": "quote_integrity",
+      "note": "Direct quotes used in the script are supported by the packet and properly attributed, including Biden's roof statement, the HFAC majority 'prioritized the optics' line, the minority's Trump-initiation line, and the AAR worst-case-planning finding."
+    },
+    {
+      "category": "unsupported_implications",
+      "note": "The script avoids unsupported intent claims and generally keeps strong accountability framing tied to official findings and attributed committee conclusions."
+    },
+    {
+      "category": "coverage_bias_protection",
+      "note": "The script does not force a false single-blame narrative; it preserves the packet's key limitation that official records conflict and that responsibility spans inherited constraints and final execution."
+    },
+    {
+      "category": "narrative",
+      "note": "The piece clearly identifies the real later development: not just the evacuation itself, but that one congressional investigation generated two incompatible official accountability stories."
+    }
+  ],
+  "revision_request": {
+    "revision_needed": true,
+    "revision_semantics": "advisory_one_bounded_revision_cycle_if_any_findings",
+    "priority_instruction": "Replace the opening public title with one that correctly orients listeners to the 2021 withdrawal and the September 2024 dueling-report accountability angle, without implying the withdrawal happened in 2024.",
+    "safe_to_auto_revise": true,
+    "human_review_recommended": false,
+    "production_blocking": false
+  },
+  "audit": {
+    "qa_agent_did_not_modify_script": true,
+    "qa_agent_did_not_modify_story_data": true,
+    "qa_agent_did_not_modify_queue": true,
+    "qa_agent_did_not_perform_web_research": true,
+    "quote_packet_used_as_factual_boundary": true,
+    "stale_llm_issues_suppressed": 0,
+    "suppressed_stale_issues": [],
+    "qa_issue_registry": {
+      "registry_file": "C:\\Users\\77can\\OneDrive\\Desktop\\qa_issue_registry\\00171_qa_issue_registry.json",
+      "stable_issue_ids_applied": true,
+      "active_issue_count": 6,
+      "active_issue_ids": [
+        "QA-007",
+        "QA-008",
+        "QA-009",
+        "QA-010",
+        "QA-011",
+        "QA-012"
+      ],
+      "new_registry_next_issue_number": 13
+    }
+  }
+}
