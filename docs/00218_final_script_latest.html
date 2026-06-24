@@ -24,7 +24,35 @@
     <button class="copy-button" type="button" onclick="copyDavidPrompt()">Copy Script + David Edit Prompt</button>
   </div>
   <div id="copyStatus" aria-live="polite"></div>
-  <pre>What Ever Happened WITH… Titan / OceanGate and the ignored safety warnings?
+  <!-- JARVIS_REVIEW_HUB_START -->
+<section id="jarvis-review-hub" style="margin:24px 0;padding:18px;border:1px solid #d6e3f3;border-radius:12px;background:#f8fbff">
+  <h1 style="margin-top:0">David Review Hub</h1>
+  <h2>Story Summary</h2>
+  <p><strong>00218 — Titan / OceanGate and the ignored safety warnings</strong></p>
+  <table style="border-collapse:collapse;width:100%;margin:12px 0"><tbody>
+    <tr><th style="text-align:left;border:1px solid #ddd;padding:8px">Story Score</th><td style="border:1px solid #ddd;padding:8px">40</td></tr>
+    <tr><th style="text-align:left;border:1px solid #ddd;padding:8px">Readiness</th><td style="border:1px solid #ddd;padding:8px">10.0</td></tr>
+    <tr><th style="text-align:left;border:1px solid #ddd;padding:8px">OQS</th><td style="border:1px solid #ddd;padding:8px">7.4</td></tr>
+  </tbody></table>
+  <h2>QA Summary</h2>
+  <p><strong>Status:</strong> Pass with warnings<br><strong>Blocking Findings:</strong> 0<br><strong>Warning Count:</strong> 4<br><strong>Primary Concern:</strong> Use the approved public_story_title in the opening unless there is an explicit human-approved alternate public title.</p>
+  <h2>Editor Summary</h2>
+  <p><strong>Outcome:</strong> completed<br><strong>Major Additions:</strong> {'change_type': 'accountability', 'summary': 'Sharpened the central question around preventability, warnings, and the fatal decision to dive.', 'why_it_improves_listener_impact': 'It gives the episode a stronger spine a…<br><strong>Major Concerns:</strong> not available</p>
+  <h2>SQE Summary</h2>
+  <p><strong>Decision:</strong> accept<br><strong>Primary Finding:</strong> proceed_to_qa</p>
+  <h2>Review Artifacts</h2>
+  <p>These links were copied to GitHub Pages, pushed, and verified before Telegram can link them.</p>
+  <table style="border-collapse:collapse;width:100%;margin:12px 0"><tbody>
+    <tr><td>Final Script</td><td><a href="https://77cane-ai.github.io/podcast-factory-dashboard/artifacts/00218/final_script/00218_final_script_v2.html">Open Final Script</a></td></tr><tr><td>Quote Packet</td><td><a href="https://77cane-ai.github.io/podcast-factory-dashboard/artifacts/00218/quote_packet/00218_quote_packet.html">Open Quote Packet</a></td></tr><tr><td>QA Report</td><td><a href="https://77cane-ai.github.io/podcast-factory-dashboard/artifacts/00218/qa_report/00218_qa_report_v6.html">Open QA Report</a></td></tr><tr><td>SQE Report</td><td><a href="https://77cane-ai.github.io/podcast-factory-dashboard/artifacts/00218/sqe_report/00218_story_quality_report_v1.html">Open SQE Report</a></td></tr><tr><td>Editor Report</td><td><a href="https://77cane-ai.github.io/podcast-factory-dashboard/artifacts/00218/editor_report/00218_editor_report_v8.html">Open Editor Report</a></td></tr><tr><td>Finalization Report</td><td><a href="https://77cane-ai.github.io/podcast-factory-dashboard/artifacts/00218/finalization_report/00218_finalization_report_v1.html">Open Finalization Report</a></td></tr><tr><td>Script Revision Decisions</td><td><a href="https://77cane-ai.github.io/podcast-factory-dashboard/artifacts/00218/script_revision/00218_revision_decisions_v5.html">Open Script Revision Decisions</a></td></tr>
+  </tbody></table>
+  <h2>Review Actions</h2>
+  <button onclick="navigator.clipboard.writeText(document.querySelector('pre').innerText)">Copy Script</button>
+  <button onclick="navigator.clipboard.writeText('Perform David Final Edit. Return complete revised script only in a copyable block.
+
+' + document.querySelector('pre').innerText)">Copy Script + David Prompt</button>
+</section>
+<!-- JARVIS_REVIEW_HUB_END -->
+<pre>What Ever Happened WITH… Titan / OceanGate and the ignored safety warnings?
 
 Titan was descending toward the Titanic wreck when the surface ship lost contact.
 
@@ -547,7 +575,7 @@ And now—you know what REALLY happened.
   <h3>Locked Script Import Filename</h3>
   <p>Use this exact filename when creating the locked script file in GitHub. The <code>.txt</code> extension is required.</p>
   <p><code id="jarvis-import-filename">00218_final_script_locked_v2.txt</code></p>
-  <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('jarvis-import-filename').textContent).then(() => { this.textContent='Copied Import Filename'; }).catch(() => { this.textContent='Copy failed'; });">Copy Import Filename</button>
+  <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('jarvis-import-filename').textContent).then(() => { this.textContent='Copied Import Filename'; }).catch(() => { this.textContent='Copy failed'; });"></button>
 </section>
 <!-- JARVIS_V1139_DAVID_PHONE_WORKFLOW_END -->
 </body>

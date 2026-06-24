@@ -1,0 +1,247 @@
+<!doctype html><html><head><meta charset='utf-8'><title>QA Report — 00218_qa_report_v6.json</title><style>body{font-family:Arial,sans-serif;margin:32px;line-height:1.45;color:#222}pre{white-space:pre-wrap;background:#f7f7f7;border:1px solid #ddd;border-radius:8px;padding:16px;overflow-wrap:anywhere}a{color:#2563eb}</style></head><body><h1>QA Report — 00218_qa_report_v6.json</h1><p><strong>Source:</strong> 00218_qa_report_v6.json</p><pre>{
+  &quot;report_metadata&quot;: {
+    &quot;qa_report_version&quot;: &quot;1.0&quot;,
+    &quot;created_at&quot;: &quot;2026-06-22T13:02:20&quot;,
+    &quot;created_by&quot;: &quot;qa_agent&quot;,
+    &quot;program_name&quot;: &quot;Podcast Factory QA Agent&quot;,
+    &quot;program_version&quot;: &quot;V1.0.17&quot;,
+    &quot;canonical_story_id&quot;: &quot;00218&quot;,
+    &quot;story_title&quot;: &quot;Titan / OceanGate and the ignored safety warnings&quot;,
+    &quot;script_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\scripts\\00218_script_v7.txt&quot;,
+    &quot;quote_packet_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\quote_packets\\00218_quote_packet.json&quot;,
+    &quot;output_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\qa_reports\\00218_qa_report_v6.json&quot;,
+    &quot;revision_cycle&quot;: 6,
+    &quot;script_version&quot;: 7,
+    &quot;dry_run&quot;: false,
+    &quot;llm_review_used&quot;: true,
+    &quot;llm_error&quot;: &quot;&quot;,
+    &quot;qa_issue_registry_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\qa_issue_registry\\00218_qa_issue_registry.json&quot;,
+    &quot;stable_issue_ids_applied&quot;: true
+  },
+  &quot;qa_result&quot;: {
+    &quot;status&quot;: &quot;pass_with_warnings&quot;,
+    &quot;summary&quot;: &quot;QA completed as advisory guidance using deterministic + LLM checks: 0 high-priority blocking finding(s), 4 warning(s), 5 suggestion(s). Blocking now means fix-first priority, not a production stop.&quot;,
+    &quot;blocking_issue_count&quot;: 0,
+    &quot;warning_count&quot;: 4,
+    &quot;suggestion_count&quot;: 5,
+    &quot;advisory_only&quot;: true,
+    &quot;blocking_semantics&quot;: &quot;highest_priority_fix_first_not_production_stop&quot;,
+    &quot;priority_issue_count&quot;: 0
+  },
+  &quot;validation_passes&quot;: {
+    &quot;factual_support&quot;: &quot;warn&quot;,
+    &quot;quote_integrity&quot;: &quot;pass&quot;,
+    &quot;unsupported_implications&quot;: &quot;warn&quot;,
+    &quot;update_story_framing&quot;: &quot;not_applicable&quot;,
+    &quot;narrative_coherence&quot;: &quot;pass&quot;,
+    &quot;tts_readiness&quot;: &quot;warn&quot;,
+    &quot;style_compliance&quot;: &quot;pass&quot;,
+    &quot;process_leakage&quot;: &quot;pass&quot;,
+    &quot;closing_line&quot;: &quot;pass&quot;,
+    &quot;coverage_bias_protection&quot;: &quot;pass&quot;,
+    &quot;public_title&quot;: &quot;fail&quot;,
+    &quot;ending_alignment&quot;: &quot;pass&quot;,
+    &quot;promise_fulfillment&quot;: &quot;pass&quot;
+  },
+  &quot;issues&quot;: [
+    {
+      &quot;issue_id&quot;: &quot;QA-001&quot;,
+      &quot;severity&quot;: &quot;warning&quot;,
+      &quot;category&quot;: &quot;public_title&quot;,
+      &quot;script_location&quot;: &quot;opening&quot;,
+      &quot;problem&quot;: &quot;Opening title does not appear to match the story's public-facing title metadata.&quot;,
+      &quot;evidence_boundary&quot;: &quot;story_metadata&quot;,
+      &quot;supporting_reference&quot;: &quot;opening_title=Titan and OceanGate and the ignored safety warnings; story_public_title=Titan / OceanGate and the ignored safety warnings&quot;,
+      &quot;recommended_fix&quot;: &quot;Use the approved public_story_title in the opening unless there is an explicit human-approved alternate public title.&quot;,
+      &quot;requires_regeneration&quot;: false,
+      &quot;calibration_note&quot;: &quot;V1.0.17: downgraded from blocking because this is a style/title/TTS/narrative advisory category; QA no longer stops production.&quot;,
+      &quot;transient_issue_id&quot;: &quot;QA-001&quot;,
+      &quot;stable_issue_id&quot;: &quot;QA-001&quot;,
+      &quot;qa_issue_fingerprint&quot;: &quot;public title:53966b06c394be91&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;QA-002&quot;,
+      &quot;severity&quot;: &quot;suggestion&quot;,
+      &quot;category&quot;: &quot;public_title&quot;,
+      &quot;script_location&quot;: &quot;opening&quot;,
+      &quot;problem&quot;: &quot;Public story title may lack a strong audience hook or concrete identifying anchor: Titan and OceanGate and the ignored safety warnings&quot;,
+      &quot;evidence_boundary&quot;: &quot;factory_style_rule&quot;,
+      &quot;supporting_reference&quot;: &quot;&quot;,
+      &quot;recommended_fix&quot;: &quot;Consider replacing generic labels like 'issues,' 'questions,' or 'story' with a concrete public-facing hook that names the event, institution, scandal, or consequence.&quot;,
+      &quot;requires_regeneration&quot;: false,
+      &quot;transient_issue_id&quot;: &quot;QA-002&quot;,
+      &quot;stable_issue_id&quot;: &quot;QA-002&quot;,
+      &quot;qa_issue_fingerprint&quot;: &quot;public title:4d54f6a3546212b7&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;QA-038&quot;,
+      &quot;severity&quot;: &quot;suggestion&quot;,
+      &quot;category&quot;: &quot;tts&quot;,
+      &quot;script_location&quot;: &quot;line 346&quot;,
+      &quot;problem&quot;: &quot;Potential TTS-readiness issue detected: unexpanded_or_heavy_acronym (NASA)&quot;,
+      &quot;evidence_boundary&quot;: &quot;factory_style_rule&quot;,
+      &quot;supporting_reference&quot;: &quot;&quot;,
+      &quot;recommended_fix&quot;: &quot;Spell out or convert to natural spoken phrasing if needed.&quot;,
+      &quot;requires_regeneration&quot;: false,
+      &quot;transient_issue_id&quot;: &quot;QA-003&quot;,
+      &quot;stable_issue_id&quot;: &quot;QA-038&quot;,
+      &quot;qa_issue_fingerprint&quot;: &quot;tts:6cd1c4c41d9bff52&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;QA-001&quot;,
+      &quot;severity&quot;: &quot;warning&quot;,
+      &quot;category&quot;: &quot;public_title&quot;,
+      &quot;script_location&quot;: &quot;opening&quot;,
+      &quot;problem&quot;: &quot;Opening title does not appear to match the story's public-facing title metadata.&quot;,
+      &quot;evidence_boundary&quot;: &quot;story_metadata&quot;,
+      &quot;supporting_reference&quot;: &quot;opening_title=Titan and OceanGate and the ignored safety warnings; story_public_title=Titan / OceanGate and the ignored safety warnings&quot;,
+      &quot;recommended_fix&quot;: &quot;Use the approved public_story_title in the opening unless there is an explicit human-approved alternate public title.&quot;,
+      &quot;requires_regeneration&quot;: false,
+      &quot;source&quot;: &quot;llm_review&quot;,
+      &quot;calibration_note&quot;: &quot;V1.0.17: downgraded from blocking because this is a style/title/TTS/narrative advisory category; QA no longer stops production.&quot;,
+      &quot;transient_issue_id&quot;: &quot;QA-004&quot;,
+      &quot;stable_issue_id&quot;: &quot;QA-001&quot;,
+      &quot;qa_issue_fingerprint&quot;: &quot;public title:53966b06c394be91&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;QA-046&quot;,
+      &quot;severity&quot;: &quot;suggestion&quot;,
+      &quot;category&quot;: &quot;closing&quot;,
+      &quot;script_location&quot;: &quot;final line&quot;,
+      &quot;problem&quot;: &quot;The script ends with the resolved-story closing line, but the script itself presents the story as substantially clarified by later official findings rather than fully resolved in every accountability dimension. The approved resolved ending is allowed only when the story is resolved/substantially answered; this draft leaves civil accountability and some institutional follow-through open while repeatedly framing the episode as a later-record reframing.&quot;,
+      &quot;evidence_boundary&quot;: &quot;factory_style_rule&quot;,
+      &quot;supporting_reference&quot;: &quot;Show-format final lines: resolved/substantially answered story uses 'And now—you know what REALLY happened.' unresolved central mystery uses 'And now—you know more about what REALLY happened.'&quot;,
+      &quot;recommended_fix&quot;: &quot;Reassess whether the story is being framed as fully resolved or as substantially clarified but still open in some accountability dimensions; align the preceding close and exact final line accordingly.&quot;,
+      &quot;requires_regeneration&quot;: false,
+      &quot;source&quot;: &quot;llm_review&quot;,
+      &quot;calibration_note&quot;: &quot;Approved final show line detected; any certainty concern is advisory only.&quot;,
+      &quot;transient_issue_id&quot;: &quot;QA-005&quot;,
+      &quot;stable_issue_id&quot;: &quot;QA-046&quot;,
+      &quot;qa_issue_fingerprint&quot;: &quot;closing:70468e2ebb25a651&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;QA-047&quot;,
+      &quot;severity&quot;: &quot;warning&quot;,
+      &quot;category&quot;: &quot;implication&quot;,
+      &quot;script_location&quot;: &quot;section on criminal accountability&quot;,
+      &quot;problem&quot;: &quot;The line saying Rush 'may have faced criminal scrutiny if he had survived' is supportable only as attributed AP-reported conditional analysis, but the surrounding phrasing risks sounding more concrete than the packet safely supports.&quot;,
+      &quot;evidence_boundary&quot;: &quot;quote_packet&quot;,
+      &quot;supporting_reference&quot;: &quot;consequence_resolution_takeaways: 'The person investigators most directly scrutinized was also one of the five people who died, leaving criminal accountability largely hypothetical.' Source: Associated Press; use conditional wording; no prosecution occurred.&quot;,
+      &quot;recommended_fix&quot;: &quot;Keep the claim explicitly conditional and clearly attributed to AP reporting, or remove the criminal-scrutiny inference.&quot;,
+      &quot;requires_regeneration&quot;: true,
+      &quot;source&quot;: &quot;llm_review&quot;,
+      &quot;transient_issue_id&quot;: &quot;QA-006&quot;,
+      &quot;stable_issue_id&quot;: &quot;QA-047&quot;,
+      &quot;qa_issue_fingerprint&quot;: &quot;implication:048bef3cb961397d&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;QA-048&quot;,
+      &quot;severity&quot;: &quot;warning&quot;,
+      &quot;category&quot;: &quot;factual_support&quot;,
+      &quot;script_location&quot;: &quot;section on post-2022 handling of Titan&quot;,
+      &quot;problem&quot;: &quot;The script states the Coast Guard said OceanGate 'conducted no preventive maintenance' and 'did not properly store Titan during the extended off-season.' Those specifics may be supported by the underlying report, but they are not clearly surfaced in the provided packet summary/evidence items at the same confidence level as the broader anomaly and monitoring failures.&quot;,
+      &quot;evidence_boundary&quot;: &quot;quote_packet&quot;,
+      &quot;supporting_reference&quot;: &quot;later_narrative_revisions: Coast Guard found OceanGate failed to investigate/address known hull anomalies after 2022 and failed to act on monitoring data.&quot;,
+      &quot;recommended_fix&quot;: &quot;Either tighten this passage to the packet-explicit findings on hull anomalies and monitoring data, or ensure these maintenance/storage details are directly sourced from the quote packet material used for the script.&quot;,
+      &quot;requires_regeneration&quot;: true,
+      &quot;source&quot;: &quot;llm_review&quot;,
+      &quot;transient_issue_id&quot;: &quot;QA-007&quot;,
+      &quot;stable_issue_id&quot;: &quot;QA-048&quot;,
+      &quot;qa_issue_fingerprint&quot;: &quot;factual support:2563b24089ab632c&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;QA-002&quot;,
+      &quot;severity&quot;: &quot;suggestion&quot;,
+      &quot;category&quot;: &quot;public_title&quot;,
+      &quot;script_location&quot;: &quot;opening&quot;,
+      &quot;problem&quot;: &quot;Public story title may lack a strong audience hook or concrete identifying anchor: Titan and OceanGate and the ignored safety warnings&quot;,
+      &quot;evidence_boundary&quot;: &quot;factory_style_rule&quot;,
+      &quot;supporting_reference&quot;: &quot;&quot;,
+      &quot;recommended_fix&quot;: &quot;Consider replacing generic labels like 'issues,' 'questions,' or 'story' with a concrete public-facing hook that names the event, institution, scandal, or consequence.&quot;,
+      &quot;requires_regeneration&quot;: false,
+      &quot;source&quot;: &quot;llm_review&quot;,
+      &quot;transient_issue_id&quot;: &quot;QA-008&quot;,
+      &quot;stable_issue_id&quot;: &quot;QA-002&quot;,
+      &quot;qa_issue_fingerprint&quot;: &quot;public title:4d54f6a3546212b7&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;QA-038&quot;,
+      &quot;severity&quot;: &quot;suggestion&quot;,
+      &quot;category&quot;: &quot;tts&quot;,
+      &quot;script_location&quot;: &quot;line 346&quot;,
+      &quot;problem&quot;: &quot;Potential TTS-readiness issue detected: unexpanded_or_heavy_acronym (NASA)&quot;,
+      &quot;evidence_boundary&quot;: &quot;factory_style_rule&quot;,
+      &quot;supporting_reference&quot;: &quot;&quot;,
+      &quot;recommended_fix&quot;: &quot;Spell out or convert to natural spoken phrasing if needed.&quot;,
+      &quot;requires_regeneration&quot;: false,
+      &quot;source&quot;: &quot;llm_review&quot;,
+      &quot;transient_issue_id&quot;: &quot;QA-009&quot;,
+      &quot;stable_issue_id&quot;: &quot;QA-038&quot;,
+      &quot;qa_issue_fingerprint&quot;: &quot;tts:6cd1c4c41d9bff52&quot;
+    }
+  ],
+  &quot;positive_findings&quot;: [
+    {
+      &quot;category&quot;: &quot;style&quot;,
+      &quot;note&quot;: &quot;Standard opening phrase detected.&quot;
+    },
+    {
+      &quot;category&quot;: &quot;closing&quot;,
+      &quot;note&quot;: &quot;Approved final line detected exactly.&quot;
+    },
+    {
+      &quot;category&quot;: &quot;quote_integrity&quot;,
+      &quot;note&quot;: &quot;All detected direct quotes matched quote packet direct quotes.&quot;
+    },
+    {
+      &quot;category&quot;: &quot;factual_support&quot;,
+      &quot;note&quot;: &quot;The core accountability spine is strongly grounded in packet-supported Coast Guard and NTSB findings: preventable deaths, inadequate engineering, damaged pressure vessel, and broader failures in certification, maintenance, inspection, monitoring, and oversight.&quot;
+    },
+    {
+      &quot;category&quot;: &quot;quote_integrity&quot;,
+      &quot;note&quot;: &quot;Direct quotes are used carefully and stay within packet-supported safe use, especially the Coast Guard 'preventable' line and the short CBS transcript phrases from Stockton Rush.&quot;
+    },
+    {
+      &quot;category&quot;: &quot;coverage_bias_protection&quot;,
+      &quot;note&quot;: &quot;The script appropriately shifts from early rescue-drama framing to later documentary accountability without penalizing the story for thin mainstream coverage.&quot;
+    },
+    {
+      &quot;category&quot;: &quot;narrative&quot;,
+      &quot;note&quot;: &quot;The script maintains a clear before/after structure and earns its central reversal: from implosion mystery to preventable institutional failure.&quot;
+    }
+  ],
+  &quot;revision_request&quot;: {
+    &quot;revision_needed&quot;: true,
+    &quot;revision_semantics&quot;: &quot;advisory_one_bounded_revision_cycle_if_any_findings&quot;,
+    &quot;priority_instruction&quot;: &quot;Use the approved public_story_title in the opening unless there is an explicit human-approved alternate public title.&quot;,
+    &quot;safe_to_auto_revise&quot;: true,
+    &quot;human_review_recommended&quot;: false,
+    &quot;production_blocking&quot;: false
+  },
+  &quot;audit&quot;: {
+    &quot;qa_agent_did_not_modify_script&quot;: true,
+    &quot;qa_agent_did_not_modify_story_data&quot;: true,
+    &quot;qa_agent_did_not_modify_queue&quot;: true,
+    &quot;qa_agent_did_not_perform_web_research&quot;: true,
+    &quot;quote_packet_used_as_factual_boundary&quot;: true,
+    &quot;stale_llm_issues_suppressed&quot;: 0,
+    &quot;suppressed_stale_issues&quot;: [],
+    &quot;qa_issue_registry&quot;: {
+      &quot;registry_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\qa_issue_registry\\00218_qa_issue_registry.json&quot;,
+      &quot;stable_issue_ids_applied&quot;: true,
+      &quot;active_issue_count&quot;: 9,
+      &quot;active_issue_ids&quot;: [
+        &quot;QA-001&quot;,
+        &quot;QA-002&quot;,
+        &quot;QA-038&quot;,
+        &quot;QA-001&quot;,
+        &quot;QA-046&quot;,
+        &quot;QA-047&quot;,
+        &quot;QA-048&quot;,
+        &quot;QA-002&quot;,
+        &quot;QA-038&quot;
+      ],
+      &quot;new_registry_next_issue_number&quot;: 49
+    }
+  }
+}</pre></body></html>
