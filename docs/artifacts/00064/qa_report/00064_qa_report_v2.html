@@ -1,0 +1,188 @@
+<!doctype html><html><head><meta charset='utf-8'><title>QA Report — 00064_qa_report_v2.json</title><style>body{font-family:Arial,sans-serif;margin:32px;line-height:1.45;color:#222}pre{white-space:pre-wrap;background:#f7f7f7;border:1px solid #ddd;border-radius:8px;padding:16px;overflow-wrap:anywhere}a{color:#2563eb}</style></head><body><h1>QA Report — 00064_qa_report_v2.json</h1><p><strong>Source:</strong> 00064_qa_report_v2.json</p><pre>{
+  &quot;report_metadata&quot;: {
+    &quot;qa_report_version&quot;: &quot;1.0&quot;,
+    &quot;created_at&quot;: &quot;2026-06-24T17:37:50&quot;,
+    &quot;created_by&quot;: &quot;qa_agent&quot;,
+    &quot;program_name&quot;: &quot;Podcast Factory QA Agent&quot;,
+    &quot;program_version&quot;: &quot;V1.0.17&quot;,
+    &quot;canonical_story_id&quot;: &quot;00064&quot;,
+    &quot;story_title&quot;: &quot;Federal prison deaths after reform: the accountability story keeps widening into staffing, infrastructure, healthcare, restraints, and enterprise-level blindness&quot;,
+    &quot;script_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\scripts\\00064_script_v2.txt&quot;,
+    &quot;quote_packet_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\quote_packets\\00064_quote_packet.json&quot;,
+    &quot;output_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\qa_reports\\00064_qa_report_v2.json&quot;,
+    &quot;revision_cycle&quot;: 2,
+    &quot;script_version&quot;: 2,
+    &quot;dry_run&quot;: false,
+    &quot;llm_review_used&quot;: true,
+    &quot;llm_error&quot;: &quot;&quot;,
+    &quot;qa_issue_registry_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\qa_issue_registry\\00064_qa_issue_registry.json&quot;,
+    &quot;stable_issue_ids_applied&quot;: true
+  },
+  &quot;qa_result&quot;: {
+    &quot;status&quot;: &quot;pass_with_warnings&quot;,
+    &quot;summary&quot;: &quot;QA completed as advisory guidance using deterministic + LLM checks: 0 high-priority blocking finding(s), 2 warning(s), 3 suggestion(s). Blocking now means fix-first priority, not a production stop.&quot;,
+    &quot;blocking_issue_count&quot;: 0,
+    &quot;warning_count&quot;: 2,
+    &quot;suggestion_count&quot;: 3,
+    &quot;advisory_only&quot;: true,
+    &quot;blocking_semantics&quot;: &quot;highest_priority_fix_first_not_production_stop&quot;,
+    &quot;priority_issue_count&quot;: 0
+  },
+  &quot;validation_passes&quot;: {
+    &quot;factual_support&quot;: &quot;warn&quot;,
+    &quot;quote_integrity&quot;: &quot;pass&quot;,
+    &quot;unsupported_implications&quot;: &quot;pass&quot;,
+    &quot;update_story_framing&quot;: &quot;not_applicable&quot;,
+    &quot;narrative_coherence&quot;: &quot;warn&quot;,
+    &quot;tts_readiness&quot;: &quot;pass&quot;,
+    &quot;style_compliance&quot;: &quot;pass&quot;,
+    &quot;process_leakage&quot;: &quot;pass&quot;,
+    &quot;closing_line&quot;: &quot;pass&quot;,
+    &quot;coverage_bias_protection&quot;: &quot;pass&quot;,
+    &quot;public_title&quot;: &quot;pass&quot;,
+    &quot;ending_alignment&quot;: &quot;warn&quot;,
+    &quot;promise_fulfillment&quot;: &quot;pass&quot;
+  },
+  &quot;issues&quot;: [
+    {
+      &quot;issue_id&quot;: &quot;QA-008&quot;,
+      &quot;severity&quot;: &quot;suggestion&quot;,
+      &quot;category&quot;: &quot;closing&quot;,
+      &quot;script_location&quot;: &quot;final line&quot;,
+      &quot;problem&quot;: &quot;The script repeatedly frames the central accountability question as still open and unresolved, but ends with the resolved-story closing line.&quot;,
+      &quot;evidence_boundary&quot;: &quot;factory_style_rule&quot;,
+      &quot;supporting_reference&quot;: &quot;Show-format final lines: unresolved central mystery must end with \&quot;And now—you know more about what REALLY happened.\&quot;&quot;,
+      &quot;recommended_fix&quot;: &quot;Replace the final line with the approved unresolved ending, or revise the closing framing so it genuinely establishes substantial resolution before using the resolved ending.&quot;,
+      &quot;requires_regeneration&quot;: false,
+      &quot;source&quot;: &quot;llm_review&quot;,
+      &quot;calibration_note&quot;: &quot;Approved final show line detected; any certainty concern is advisory only.&quot;,
+      &quot;transient_issue_id&quot;: &quot;QA-001&quot;,
+      &quot;stable_issue_id&quot;: &quot;QA-008&quot;,
+      &quot;qa_issue_fingerprint&quot;: &quot;closing:dbc6bd328fb42be8&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;QA-009&quot;,
+      &quot;severity&quot;: &quot;warning&quot;,
+      &quot;category&quot;: &quot;factual_support&quot;,
+      &quot;script_location&quot;: &quot;leadership-change section&quot;,
+      &quot;problem&quot;: &quot;The statement that \&quot;A new director, William K. Marshall the Third, was sworn in on April twenty-first, twenty twenty-five\&quot; is not supported within the provided quote packet summary.&quot;,
+      &quot;evidence_boundary&quot;: &quot;quote_packet&quot;,
+      &quot;supporting_reference&quot;: &quot;Packet limitation: leadership changes after January 2025 are relevant context, but the packet does not attribute continuing problems to any one director without source support. No evidence item in the packet supports the named successor and swearing-in date.&quot;,
+      &quot;recommended_fix&quot;: &quot;Remove the unsupported successor-specific detail or replace it with packet-supported generic leadership-change context only.&quot;,
+      &quot;requires_regeneration&quot;: true,
+      &quot;source&quot;: &quot;llm_review&quot;,
+      &quot;transient_issue_id&quot;: &quot;QA-002&quot;,
+      &quot;stable_issue_id&quot;: &quot;QA-009&quot;,
+      &quot;qa_issue_fingerprint&quot;: &quot;factual support:9882eddcb46419fd&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;QA-010&quot;,
+      &quot;severity&quot;: &quot;warning&quot;,
+      &quot;category&quot;: &quot;ending_alignment&quot;,
+      &quot;script_location&quot;: &quot;closing paragraph before final line&quot;,
+      &quot;problem&quot;: &quot;The close correctly says there was not one neat system-wide resolution and that the question is still being watched, but then pivots to a fully resolved final-line promise. The setup does not earn that line.&quot;,
+      &quot;evidence_boundary&quot;: &quot;factory_style_rule&quot;,
+      &quot;supporting_reference&quot;: &quot;Required final-line rule plus instruction that the preceding close should not imply full resolution if the script repeatedly says key facts remain unresolved.&quot;,
+      &quot;recommended_fix&quot;: &quot;Keep the unresolved framing through the final beat and use the approved unresolved ending.&quot;,
+      &quot;requires_regeneration&quot;: false,
+      &quot;source&quot;: &quot;llm_review&quot;,
+      &quot;transient_issue_id&quot;: &quot;QA-003&quot;,
+      &quot;stable_issue_id&quot;: &quot;QA-010&quot;,
+      &quot;qa_issue_fingerprint&quot;: &quot;ending alignment:6e0eb0478212f471&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;QA-011&quot;,
+      &quot;severity&quot;: &quot;suggestion&quot;,
+      &quot;category&quot;: &quot;public_title&quot;,
+      &quot;script_location&quot;: &quot;opening title / opening question&quot;,
+      &quot;problem&quot;: &quot;The public-facing title \&quot;Federal Prison Reform\&quot; is grammatically clean and spoken-natural, but it is broad enough that listeners may not immediately understand the specific story is about prison deaths, oversight findings, and widening accountability.&quot;,
+      &quot;evidence_boundary&quot;: &quot;story_metadata&quot;,
+      &quot;supporting_reference&quot;: &quot;Public title should support clarity, grammar, spoken naturalness, and audience orientation.&quot;,
+      &quot;recommended_fix&quot;: &quot;Consider a more audience-orienting public title that signals deaths and accountability, while preserving the approved show-branding format.&quot;,
+      &quot;requires_regeneration&quot;: false,
+      &quot;source&quot;: &quot;llm_review&quot;,
+      &quot;transient_issue_id&quot;: &quot;QA-004&quot;,
+      &quot;stable_issue_id&quot;: &quot;QA-011&quot;,
+      &quot;qa_issue_fingerprint&quot;: &quot;public title:d6dfff832e9ddfc8&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;QA-012&quot;,
+      &quot;severity&quot;: &quot;suggestion&quot;,
+      &quot;category&quot;: &quot;narrative&quot;,
+      &quot;script_location&quot;: &quot;opening third and recurring structure throughout&quot;,
+      &quot;problem&quot;: &quot;The script leans heavily on repeated short-sentence emphasis patterns (\&quot;It controlled... It controlled...\&quot; / \&quot;It affects... It affects...\&quot;) which are effective in moderation but become somewhat canned by repetition.&quot;,
+      &quot;evidence_boundary&quot;: &quot;factory_style_rule&quot;,
+      &quot;supporting_reference&quot;: &quot;Flag narrative-discipline problems including overextended or canned phrasing.&quot;,
+      &quot;recommended_fix&quot;: &quot;Trim a few repeated emphasis chains so the strongest ones land harder and the spoken flow feels less patterned.&quot;,
+      &quot;requires_regeneration&quot;: false,
+      &quot;source&quot;: &quot;llm_review&quot;,
+      &quot;transient_issue_id&quot;: &quot;QA-005&quot;,
+      &quot;stable_issue_id&quot;: &quot;QA-012&quot;,
+      &quot;qa_issue_fingerprint&quot;: &quot;narrative:3be04fbb5b54ccac&quot;
+    }
+  ],
+  &quot;positive_findings&quot;: [
+    {
+      &quot;category&quot;: &quot;style&quot;,
+      &quot;note&quot;: &quot;Standard opening phrase detected.&quot;
+    },
+    {
+      &quot;category&quot;: &quot;closing&quot;,
+      &quot;note&quot;: &quot;Approved final line detected exactly.&quot;
+    },
+    {
+      &quot;category&quot;: &quot;quote_integrity&quot;,
+      &quot;note&quot;: &quot;All detected direct quotes matched quote packet direct quotes.&quot;
+    },
+    {
+      &quot;category&quot;: &quot;factual_support&quot;,
+      &quot;note&quot;: &quot;Core claims about the 344-death review, category breakdown, contraband contribution, missing death-review documents, emergency-response deficiencies, staffing/infrastructure/healthcare widening, Bardell limitations, CRC screening findings, restraints oversight, and USP Canaan inspection all stay well within the packet.&quot;
+    },
+    {
+      &quot;category&quot;: &quot;quote_integrity&quot;,
+      &quot;note&quot;: &quot;Direct quote use is restrained and appropriately limited to packet-supported short phrases like \&quot;unsafe conditions\&quot; and \&quot;staffing shortages, deteriorating infrastructure, and the introduction of contraband.\&quot;&quot;
+    },
+    {
+      &quot;category&quot;: &quot;unsupported_implications&quot;,
+      &quot;note&quot;: &quot;The script avoids unsupported intent claims and preserves the important Bardell limitation that OIG did not find knowing or intentional misrepresentations by the assigned AUSA.&quot;
+    },
+    {
+      &quot;category&quot;: &quot;coverage_bias_protection&quot;,
+      &quot;note&quot;: &quot;The narrative appropriately widens beyond Epstein and Bulger without penalizing the story for thin mainstream framing, and it uses documentary accountability analysis rather than speculation.&quot;
+    },
+    {
+      &quot;category&quot;: &quot;style_compliance&quot;,
+      &quot;note&quot;: &quot;No process leakage, no invented research behavior, and no excessive caveat clutter; the accountability framing is direct but evidence-bounded.&quot;
+    }
+  ],
+  &quot;revision_request&quot;: {
+    &quot;revision_needed&quot;: true,
+    &quot;revision_semantics&quot;: &quot;advisory_one_bounded_revision_cycle_if_any_findings&quot;,
+    &quot;priority_instruction&quot;: &quot;Remove the unsupported successor-specific detail or replace it with packet-supported generic leadership-change context only.&quot;,
+    &quot;safe_to_auto_revise&quot;: true,
+    &quot;human_review_recommended&quot;: false,
+    &quot;production_blocking&quot;: false
+  },
+  &quot;audit&quot;: {
+    &quot;qa_agent_did_not_modify_script&quot;: true,
+    &quot;qa_agent_did_not_modify_story_data&quot;: true,
+    &quot;qa_agent_did_not_modify_queue&quot;: true,
+    &quot;qa_agent_did_not_perform_web_research&quot;: true,
+    &quot;quote_packet_used_as_factual_boundary&quot;: true,
+    &quot;stale_llm_issues_suppressed&quot;: 0,
+    &quot;suppressed_stale_issues&quot;: [],
+    &quot;qa_issue_registry&quot;: {
+      &quot;registry_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\qa_issue_registry\\00064_qa_issue_registry.json&quot;,
+      &quot;stable_issue_ids_applied&quot;: true,
+      &quot;active_issue_count&quot;: 5,
+      &quot;active_issue_ids&quot;: [
+        &quot;QA-008&quot;,
+        &quot;QA-009&quot;,
+        &quot;QA-010&quot;,
+        &quot;QA-011&quot;,
+        &quot;QA-012&quot;
+      ],
+      &quot;new_registry_next_issue_number&quot;: 13
+    }
+  }
+}</pre></body></html>
