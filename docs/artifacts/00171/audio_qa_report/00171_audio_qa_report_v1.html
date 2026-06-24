@@ -1,0 +1,129 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Audio QA Report — 00171_audio_qa_report_v1.json</title><style>body{font-family:Arial,sans-serif;margin:32px;line-height:1.45;color:#222}pre{white-space:pre-wrap;background:#f7f7f7;border:1px solid #ddd;border-radius:8px;padding:16px;overflow-wrap:anywhere}a{color:#2563eb}</style></head><body><h1>Audio QA Report — 00171_audio_qa_report_v1.json</h1><p><strong>Source:</strong> 00171_audio_qa_report_v1.json</p><pre>{
+  &quot;program_name&quot;: &quot;Podcast Factory Audio QA Agent&quot;,
+  &quot;program_version&quot;: &quot;V1.1.6&quot;,
+  &quot;updated_on&quot;: &quot;2026-06-17&quot;,
+  &quot;created_at&quot;: &quot;2026-06-24T18:14:05&quot;,
+  &quot;canonical_story_id&quot;: &quot;00171&quot;,
+  &quot;qa_result&quot;: {
+    &quot;status&quot;: &quot;needs_audio_script&quot;,
+    &quot;passed&quot;: false,
+    &quot;blocking_count&quot;: 0,
+    &quot;warning_count&quot;: 2,
+    &quot;suggestion_count&quot;: 0,
+    &quot;requires_audio_script_count&quot;: 1,
+    &quot;issue_requires_audio_script_count&quot;: 1,
+    &quot;audio_script_change_count&quot;: 1,
+    &quot;summary&quot;: &quot;Audio QA created or recommends a delivery-corrected audio script; regenerate narration from audio script.&quot;
+  },
+  &quot;inputs&quot;: {
+    &quot;final_script_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\scripts\\final\\00171_final_script_v2.txt&quot;,
+    &quot;final_script_version&quot;: 2,
+    &quot;qa_source_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\scripts\\final\\00171_final_script_v2.txt&quot;,
+    &quot;qa_source_type&quot;: &quot;final_script&quot;,
+    &quot;audio_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\audio\\00171_narration_v1.mp3&quot;,
+    &quot;script_sha256&quot;: &quot;357e7ce78d6095ed860154b22060af08f77b97c4f7a00e1cb61f422325365927&quot;,
+    &quot;final_script_sha256&quot;: &quot;357e7ce78d6095ed860154b22060af08f77b97c4f7a00e1cb61f422325365927&quot;,
+    &quot;audio_size_bytes&quot;: 11730902
+  },
+  &quot;outputs&quot;: {
+    &quot;audio_script_written&quot;: true,
+    &quot;audio_script_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\audio_scripts\\00171_audio_script_v1.txt&quot;,
+    &quot;optional_homograph_change_count&quot;: 0,
+    &quot;audio_qa_report_file&quot;: &quot;C:\\Users\\77can\\OneDrive\\Desktop\\audio_qa_reports\\00171_audio_qa_report_v1.json&quot;,
+    &quot;dry_run&quot;: false,
+    &quot;confirm_audio_script&quot;: false
+  },
+  &quot;authority_boundaries&quot;: {
+    &quot;delivery_only&quot;: true,
+    &quot;forbidden_changes&quot;: [
+      &quot;factual changes&quot;,
+      &quot;story restructuring&quot;,
+      &quot;quote rewriting&quot;,
+      &quot;takeaway changes&quot;,
+      &quot;accountability framing changes&quot;,
+      &quot;new content&quot;,
+      &quot;deleted narrative content&quot;
+    ],
+    &quot;allowed_change_categories&quot;: [
+      &quot;acronym_expansion&quot;,
+      &quot;currency_rendering&quot;,
+      &quot;date_rendering&quot;,
+      &quot;ellipsis_pause&quot;,
+      &quot;homograph_pronunciation&quot;,
+      &quot;machine_unfriendly_symbol&quot;,
+      &quot;military_time&quot;,
+      &quot;number_rendering&quot;,
+      &quot;proper_name_pronunciation&quot;,
+      &quot;punctuation_pacing&quot;,
+      &quot;sentence_split&quot;,
+      &quot;slash_spoken_rendering&quot;,
+      &quot;year_rendering&quot;
+    ],
+    &quot;validation_violations&quot;: [],
+    &quot;required_repair_violations&quot;: []
+  },
+  &quot;transcription&quot;: {
+    &quot;performed&quot;: true,
+    &quot;source&quot;: &quot;openai_audio_transcription&quot;,
+    &quot;model&quot;: &quot;gpt-4o-transcribe&quot;,
+    &quot;transcript_chars&quot;: 11591
+  },
+  &quot;transcript_similarity_downgrade_audit&quot;: {
+    &quot;applied&quot;: false,
+    &quot;reason&quot;: &quot;no_low_similarity_blocker&quot;,
+    &quot;blocking_count_before&quot;: 0,
+    &quot;audio_size_bytes&quot;: 11730902,
+    &quot;script_chars&quot;: 12361,
+    &quot;transcript_chars&quot;: 11591,
+    &quot;min_plausible_audio_bytes&quot;: 0,
+    &quot;transcript_char_ratio&quot;: 0.0
+  },
+  &quot;issue_counts&quot;: {
+    &quot;total&quot;: 2,
+    &quot;blocking&quot;: 0,
+    &quot;warning&quot;: 2,
+    &quot;suggestion&quot;: 0
+  },
+  &quot;issues&quot;: [
+    {
+      &quot;issue_id&quot;: &quot;AQA-001&quot;,
+      &quot;severity&quot;: &quot;warning&quot;,
+      &quot;category&quot;: &quot;year_rendering&quot;,
+      &quot;check_name&quot;: &quot;year_rendering&quot;,
+      &quot;script_location&quot;: &quot;line 1&quot;,
+      &quot;problem&quot;: &quot;Year may be read inconsistently by TTV: 2024&quot;,
+      &quot;evidence&quot;: &quot;2024&quot;,
+      &quot;recommended_fix&quot;: &quot;Spell the year in spoken form in the audio script.&quot;,
+      &quot;requires_audio_script&quot;: true,
+      &quot;modification_scope&quot;: &quot;delivery_only&quot;,
+      &quot;fingerprint&quot;: &quot;315edae43ad18a8620d9feb67ede956cd76843d1&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;AQA-001&quot;,
+      &quot;severity&quot;: &quot;warning&quot;,
+      &quot;category&quot;: &quot;script_audio_alignment&quot;,
+      &quot;check_name&quot;: &quot;moderate_transcript_difference&quot;,
+      &quot;script_location&quot;: &quot;&quot;,
+      &quot;problem&quot;: &quot;Audio transcript has moderate differences from script. Similarity=0.964&quot;,
+      &quot;evidence&quot;: &quot;script_words=1827 transcript_words=1738 warning_threshold=0.97 blocking_threshold=0.85&quot;,
+      &quot;recommended_fix&quot;: &quot;Review transcript diff before accepting audio as complete. Treat this as nonblocking unless the diff shows specific omitted, repeated, or added content.&quot;,
+      &quot;requires_audio_script&quot;: false,
+      &quot;modification_scope&quot;: &quot;delivery_only&quot;,
+      &quot;fingerprint&quot;: &quot;ddb852bb445efb87ceffa5e5fc6e5966f3fbf0ae&quot;
+    }
+  ],
+  &quot;delivery_changes&quot;: [
+    {
+      &quot;category&quot;: &quot;year_rendering&quot;,
+      &quot;original&quot;: &quot;2024&quot;,
+      &quot;replacement&quot;: &quot;twenty twenty-four&quot;,
+      &quot;description&quot;: &quot;Spelled out year for TTV rendering.&quot;
+    }
+  ],
+  &quot;delivery_change_count&quot;: 1,
+  &quot;mandatory_delivery_change_count&quot;: 1,
+  &quot;optional_homograph_change_count&quot;: 0,
+  &quot;human_review_required&quot;: false,
+  &quot;regeneration_recommended&quot;: true,
+  &quot;next_step&quot;: &quot;Regenerate narration using audio_scripts/{canonical_story_id}_audio_script_v1.txt, then rerun Audio QA.&quot;
+}</pre></body></html>
